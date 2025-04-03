@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - BTS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Mon Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pro-projects">Projets Professionnels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home" class="vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4">Bienvenue sur mon Portfolio</h1>
+                    <p class="lead">Étudiant en BTS - Développeur Web & Applications</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto">
+                    <div class="about-content text-center">
+                        <h2 class="mb-4">À Propos de Moi</h2>
+                        <div class="about-text">
+                            <p class="lead mb-4">
+                                Je m'appelle Sonny Verra, actuellement en formation BTS SIO option SLAM (Solutions Logicielles et Applications Métiers).
+                            </p>
+                            <p class="mb-4">
+                                Passionné par le développement web et logiciel, j'aime créer des solutions innovantes qui répondent aux besoins des utilisateurs. Ce qui me fascine dans le développement, c'est la possibilité de transformer des idées en applications concrètes, tout en relevant constamment de nouveaux défis techniques.
+                            </p>
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">Formation</h3>
+                                    <div class="timeline-container">
+                                        <div class="education-item">
+                                            <h5 class="text-accent">Campus Riera</h5>
+                                            <p>Première année BTS SIO SLAM</p>
+                                        </div>
+                                        <div class="education-item">
+                                            <h5 class="text-accent">UFIP Business School</h5>
+                                            <p>Deuxième année BTS SIO SLAM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">Expériences</h3>
+                                    <div class="timeline-container">
+                                        <div class="experience-item">
+                                            <h5 class="text-accent">Olea Soft</h5>
+                                            <p class="experience-period">Alternance - éditeur de logiciels</p>
+                                        </div>
+                                        <div class="experience-item">
+                                            <h5 class="text-accent">Wildlife Interaction</h5>
+                                            <p class="experience-period">Alternance </p>
+                                        </div>
+                                        <div class="experience-item">
+                                            <h5 class="text-accent">François Maestrati</h5>
+                                            <p class="experience-period">Stage - développeur web</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projets scolaire -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Mes Projets</h2>
+            <div class="row g-4">
+                <!-- Projet 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Application Football</h5>
+                            <p class="card-text">Application client lourd d'entraînement football développée en Java</p>
+                            <a href="https://github.com/7Sonny/ProjetJavaFootball.git" class="btn btn-primary" target="_blank">
+                                <i class="bi bi-github"></i> Voir le projet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Sport Event</h5>
+                            <p class="card-text">Application Web de gestion d'événements sportifs</p>
+                            <a href="https://github.com/Sonny/Gestion-v-nement-Sportif.git" class="btn btn-primary" target="_blank">
+                                <i class="bi bi-github"></i> Voir le projet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Broceliande Immobilier</h5>
+                            <p class="card-text">Application de gestion immobilière</p>
+                            <a href="https://github.com/7Sonny/Broceliande-immobilier.git" class="btn btn-primary" target="_blank">
+                                <i class="bi bi-github"></i> Voir le projet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Gestion de Tickets</h5>
+                            <p class="card-text">Application Web de gestion de tickets avec LiteMVC</p>
+                            <a href="https://github.com/7Sonny/gestion-de-tickets.git" class="btn btn-primary" target="_blank">
+                                <i class="bi bi-github"></i> Voir le projet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Application Recepter</h5>
+                            <p class="card-text">Application client lourd de gestion</p>
+                            <a href="https://github.com/7Sonny/Recepter.git" class="btn btn-primary" target="_blank">
+                                <i class="bi bi-github"></i> Voir le projet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Croix Rouge</h5>
+                            <p class="card-text">Site WordPress pour la Croix Rouge de Cagnes-sur-Mer</p>
+                            <a href="https://croixrougecagnessurmer.wordpress.com" class="btn btn-primary" target="_blank">
+                                <i class="bi bi-globe"></i> Visiter le site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 7 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Personnel</h5>
+                            <p class="card-text">Blog développé avec des technologies web modernes</p>
+                            <a href="https://github.com/7Sonny/Blog.git" class="btn btn-primary" target="_blank">
+                                <i class="bi bi-github"></i> Voir le projet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 8 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">BaseMVC</h5>
+                            <p class="card-text">Framework MVC personnalisé pour le développement web</p>
+                            <a href="https://github.com/7Sonny/basemvc.git" class="btn btn-primary" target="_blank">
+                                <i class="bi bi-github"></i> Voir le projet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 9 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">GLPI</h5>
+                            <p class="card-text">Projet d'infrastructure et gestion de parc informatique</p>
+                            <a href="#" class="btn btn-secondary disabled">
+                                <i class="bi bi-server"></i> Documentation à venir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Professionnels -->
+    <section id="pro-projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Projets Professionnels</h2>
+            <div class="row g-4">
+                <!-- Migration Projet -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Migration Application Bureau vers Web</h5>
+                            <p class="card-text">Migration des données d'un logiciel bureau (client lourd) vers une application Web</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Terminaux Zebra Installation -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Installation Terminaux Zebra</h5>
+                            <p class="card-text">Configuration et installation de terminaux Zebra</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Terminaux Zebra MAJ -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Mise à jour Terminaux Zebra</h5>
+                            <p class="card-text">Mise à jour des terminaux Zebra (.apk)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Documentation -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Réécriture Documentation</h5>
+                            <p class="card-text">Réécriture complète de la documentation d'un logiciel</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bot Discord -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Bot Discord</h5>
+                            <p class="card-text">Bot Discord pour gestion de serveur développé en Python</p>
+                            <a href="https://github.com/7Sonny/Bot-discord" class="btn btn-primary" target="_blank">
+                                <i class="bi bi-github"></i> Voir le projet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Serveur VPS -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Installation Serveur VPS</h5>
+                            <p class="card-text">Installation et configuration d'un serveur VPS Ubuntu 24.04 avec solution Keyhelp</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Site Wordpress Rackam -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Site Wordpress Rackam</h5>
+                            <p class="card-text">Développement et déploiement d'un site Wordpress</p>
+                            <a href="https://www.rackam.fmdevschool.fr" class="btn btn-primary" target="_blank">
+                                <i class="bi bi-globe"></i> Visiter le site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Compétences</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Développement Web</h5>
+                            <ul class="list-unstyled">
+                                <li>HTML/CSS</li>
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                                <li>WordPress</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Applications</h5>
+                            <ul class="list-unstyled">
+                                <li>Java</li>
+                                <li>MVC</li>
+                                <li>Client Lourd</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Systèmes</h5>
+                            <ul class="list-unstyled">
+                                <li>Virtualisation</li>
+                                <li>GLPI</li>
+                                <li>Administration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Outils</h5>
+                            <ul class="list-unstyled">
+                                <li>Git</li>
+                                <li>GitHub</li>
+                                <li>VS Code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2>Contact</h2>
+                        <p class="lead">N'hésitez pas à me contacter</p>
+                    </div>
+                    <div class="contact-info">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="bi bi-envelope-fill"></i>
+                                    <h5>Email</h5>
+                                    <p>sonny.verra@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="bi bi-telephone-fill"></i>
+                                    <h5>Téléphone</h5>
+                                    <p>+33 07 82 27 60 05</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <h5>Localisation</h5>
+                                    <p>Nice, France</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="bi bi-linkedin"></i>
+                                    <h5>LinkedIn</h5>
+                                    <a href="https://www.linkedin.com/in/sonny-verra" target="_blank" class="text-decoration-none">
+                                        /in/sonny-verra
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
