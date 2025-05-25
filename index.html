@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio - BTS</title>
+    <meta name="theme-color" content="#1a1a1a">
+    <title>Sonny Verra Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#home">Mon Portfolio</a>
+            <a class="navbar-brand" href="#home">
+                <span class="brand-text">Sonny Verra</span>
+                <span class="brand-subtitle">Portfolio</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,7 +27,7 @@
                     <li class="nav-item"><a class="nav-link" href="#about">À Propos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
                     <li class="nav-item"><a class="nav-link" href="#pro-projects">Projets Professionnels</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -30,13 +35,12 @@
     </nav>
 
     <!-- Header Section -->
-    <header id="home" class="vh-100 d-flex align-items-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h1 class="display-4">Bienvenue sur mon Portfolio</h1>
-                    <p class="lead">Étudiant en BTS - Développeur Web & Applications</p>
-                </div>
+    <header id="home" class="vh-100 d-flex align-items-center hero">
+        <div class="container text-center hero-content">
+            <div class="title-container">
+                <div class="tech-symbols-title" id="techSymbolsTitle"></div>
+                <h1 class="display-4 mb-4" data-aos="fade-down">Sonny Verra</h1>
+                <p class="lead mb-5" data-aos="fade-up">Développeur Web & Applications</p>
             </div>
         </div>
     </header>
@@ -45,350 +49,534 @@
     <section id="about" class="py-5">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-8 mx-auto">
-                    <div class="about-content text-center">
-                        <h2 class="mb-4">À Propos de Moi</h2>
-                        <div class="about-text">
-                            <p class="lead mb-4">
-                                Je m'appelle Sonny Verra, actuellement en formation BTS SIO option SLAM (Solutions Logicielles et Applications Métiers).
-                            </p>
-                            <p class="mb-4">
-                                Passionné par le développement web et logiciel, j'aime créer des solutions innovantes qui répondent aux besoins des utilisateurs. Ce qui me fascine dans le développement, c'est la possibilité de transformer des idées en applications concrètes, tout en relevant constamment de nouveaux défis techniques.
-                            </p>
-                            <div class="row mt-4">
-                                <div class="col-md-6">
-                                    <h3 class="mb-3">Formation</h3>
-                                    <div class="timeline-container">
-                                        <div class="education-item">
-                                            <h5 class="text-accent">Campus Riera</h5>
-                                            <p>Première année BTS SIO SLAM</p>
-                                        </div>
-                                        <div class="education-item">
-                                            <h5 class="text-accent">UFIP Business School</h5>
-                                            <p>Deuxième année BTS SIO SLAM</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-3">Expériences</h3>
-                                    <div class="timeline-container">
-                                        <div class="experience-item">
-                                            <h5 class="text-accent">Olea Soft</h5>
-                                            <p class="experience-period">Alternance - éditeur de logiciels</p>
-                                        </div>
-                                        <div class="experience-item">
-                                            <h5 class="text-accent">Wildlife Interaction</h5>
-                                            <p class="experience-period">Alternance </p>
-                                        </div>
-                                        <div class="experience-item">
-                                            <h5 class="text-accent">François Maestrati</h5>
-                                            <p class="experience-period">Stage - développeur web</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-md-4">
+                    <div class="profile-container">
+                        <div class="profile-frame">
+                            <img src="photodeprofil.png" alt="Sonny Verra" class="profile-image">
                         </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h2>À propos de moi</h2>
+                    <p>Développeur passionné par la création d'applications web et mobiles innovantes. Je suis spécialisé dans le développement full-stack avec une expertise particulière en PHP, Java et technologies web modernes.</p>
+                    <p>Mon parcours m'a permis d'acquérir une solide expérience dans la conception et le développement d'applications, ainsi que dans la gestion de projets informatiques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Parcours</h2>
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Septembre 2023 - Juin 2024</span>
+                        <h3>Intégrarion du Campus Riera</h3>
+                        <p>Intégration du Campus Riera pour ma première année de BTS SIO SLAM.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - 2023</span>
+                        <h3>Alternance chez Olea Soft</h3>
+                        <p>Alternance chez Olea Soft : Maintenance et développement de projets informatiques.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Avril 2024 - Décembre 2024</span>
+                        <h3>Alternance chez Wildlife Interaction</h3>
+                        <p>Alternance chez Wildlife Interaction : accompagnement du photographe Olivier Anrigo et gestion des aspects techniques liés aux événements.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Septembre 2024 - Juin 2025</span>
+                        <h3>UFIP Buisness School</h3>
+                        <p>Intégration de l'UFIP Buisness School pour ma deuxième année de BTS SIO SLAM.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Janvier 2025 - Avril 2025</span>
+                        <h3>Stage Développeur</h3>
+                        <p>Stage chez François Maestrati. Développement de fonctionnalités web et participation à des projets clients.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- projets scolaire -->
+    <!-- Projects Section -->
     <section id="projects" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Mes Projets</h2>
-            <div class="row g-4">
-                <!-- Projet 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Application Football</h5>
-                            <p class="card-text">Application client lourd d'entraînement football développée en Java</p>
-                            <a href="https://github.com/7Sonny/ProjetJavaFootball.git" class="btn btn-primary" target="_blank">
-                                <i class="bi bi-github"></i> Voir le projet
-                            </a>
+            <h2 class="text-center mb-5" data-aos="fade-up">Mes Projets</h2>
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- First slide -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Application Football</h5>
+                                        <p class="card-text">Application client lourd d'entraînement football développée en Java</p>
+                                        <div class="tech-stack mb-3">
+                                            <span class="badge bg-info">Java</span>
+                                            <span class="badge bg-info">Scene Builder</span>
+                                            <span class="badge bg-info">MySQL</span>
+                                        </div>
+                                        <div class="project-link-wrapper">
+                                            <a href="https://github.com/7Sonny/ProjetJavaFootball.git" class="project-link" target="_blank">
+                                                <i class="bi bi-github"></i>
+                                                <span>Voir le projet</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sport Event</h5>
+                                        <p class="card-text">Application Web de gestion d'événements sportifs</p>
+                                        <div class="tech-stack mb-3">
+                                            <span class="badge bg-info">PHP</span>
+                                            <span class="badge bg-info">MySQL</span>
+                                            <span class="badge bg-info">Bootstrap</span>
+                                        </div>
+                                        <div class="project-link-wrapper">
+                                            <a href="https://github.com/7Sonny/Gestion-v-nement-Sportif.git" class="project-link" target="_blank">
+                                                <i class="bi bi-github"></i>
+                                                <span>Voir le projet</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second slide -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Broceliande Immobilier</h5>
+                                        <p class="card-text">Application de gestion immobilière</p>
+                                        <div class="tech-stack mb-3">
+                                            <span class="badge bg-info">PHP</span>
+                                            <span class="badge bg-info">MySQL</span>
+                                            <span class="badge bg-info">MVC</span>
+                                        </div>
+                                        <div class="project-link-wrapper">
+                                            <a href="https://github.com/7Sonny/Broceliande-immobilier.git" class="project-link" target="_blank">
+                                                <i class="bi bi-github"></i>
+                                                <span>Voir le projet</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Gestion de Tickets</h5>
+                                        <p class="card-text">Application Web de gestion de tickets avec LiteMVC</p>
+                                        <div class="tech-stack mb-3">
+                                            <span class="badge bg-info">PHP</span>
+                                            <span class="badge bg-info">LiteMVC</span>
+                                            <span class="badge bg-info">MySQL</span>
+                                        </div>
+                                        <div class="project-link-wrapper">
+                                            <a href="https://github.com/7Sonny/gestion-de-tickets.git" class="project-link" target="_blank">
+                                                <i class="bi bi-github"></i>
+                                                <span>Voir le projet</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third slide -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">BaseMVC</h5>
+                                        <p class="card-text">Framework MVC personnalisé pour le développement web</p>
+                                        <div class="tech-stack mb-3">
+                                            <span class="badge bg-info">PHP</span>
+                                            <span class="badge bg-info">MVC</span>
+                                            <span class="badge bg-info">MySQL</span>
+                                        </div>
+                                        <div class="project-link-wrapper">
+                                            <a href="https://github.com/7Sonny/basemvc.git" class="project-link" target="_blank">
+                                                <i class="bi bi-github"></i>
+                                                <span>Voir le projet</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">GLPI</h5>
+                                        <p class="card-text">Projet d'infrastructure et gestion de parc informatique</p>
+                                        <div class="tech-stack mb-3">
+                                            <span class="badge bg-info">GLPI</span>
+                                            <span class="badge bg-info">Infrastructure</span>
+                                        </div>
+                                        <button class="btn btn-secondary disabled">
+                                            <i class="bi bi-server"></i> Documentation à venir
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Projet 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Sport Event</h5>
-                            <p class="card-text">Application Web de gestion d'événements sportifs</p>
-                            <a href="https://github.com/7Sonny/Gestion-v-nement-Sportif.git" class="btn btn-primary" target="_blank">
-                                <i class="bi bi-github"></i> Voir le projet
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Projet 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Broceliande Immobilier</h5>
-                            <p class="card-text">Application de gestion immobilière</p>
-                            <a href="https://github.com/7Sonny/Broceliande-immobilier.git" class="btn btn-primary" target="_blank">
-                                <i class="bi bi-github"></i> Voir le projet
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Projet 4 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestion de Tickets</h5>
-                            <p class="card-text">Application Web de gestion de tickets avec LiteMVC</p>
-                            <a href="https://github.com/7Sonny/gestion-de-tickets.git" class="btn btn-primary" target="_blank">
-                                <i class="bi bi-github"></i> Voir le projet
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Projet 5 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Application Recepter</h5>
-                            <p class="card-text">Application client lourd de gestion</p>
-                            <a href="https://github.com/7Sonny/Recepter.git" class="btn btn-primary" target="_blank">
-                                <i class="bi bi-github"></i> Voir le projet
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Projet 6 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Croix Rouge</h5>
-                            <p class="card-text">Site WordPress pour la Croix Rouge de Cagnes-sur-Mer</p>
-                            <a href="https://croixrougecagnessurmer.wordpress.com" class="btn btn-primary" target="_blank">
-                                <i class="bi bi-globe"></i> Visiter le site
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Projet 7 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Blog Personnel</h5>
-                            <p class="card-text">Blog développé avec des technologies web modernes</p>
-                            <a href="https://github.com/7Sonny/Blog.git" class="btn btn-primary" target="_blank">
-                                <i class="bi bi-github"></i> Voir le projet
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Projet 8 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">BaseMVC</h5>
-                            <p class="card-text">Framework MVC personnalisé pour le développement web</p>
-                            <a href="https://github.com/7Sonny/basemvc.git" class="btn btn-primary" target="_blank">
-                                <i class="bi bi-github"></i> Voir le projet
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Projet 9 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">GLPI</h5>
-                            <p class="card-text">Projet d'infrastructure et gestion de parc informatique</p>
-                            <a href="#" class="btn btn-secondary disabled">
-                                <i class="bi bi-server"></i> Documentation à venir
-                            </a>
-                        </div>
-                    </div>
+                <!-- Carousel controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                </button>
+                <!-- Carousel indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"></button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projets Professionnels -->
+    <!-- Professional Projects Section -->
     <section id="pro-projects" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Projets Professionnels</h2>
-            <div class="row g-4">
-                <!-- Migration Projet -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Migration Application Bureau vers Web</h5>
-                            <p class="card-text">Migration des données d'un logiciel bureau (client lourd) vers une application Web</p>
+            <h2 class="text-center mb-5" data-aos="fade-up">Projets Professionnels</h2>
+            <div id="proProjectCarousel" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                    <!-- First slide -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <div class="project-icon mb-3">
+                                            <i class="bi bi-wordpress"></i>
+                                        </div>
+                                        <h5 class="card-title">Site Wordpress Rackam</h5>
+                                        <p class="card-text">Développement et déploiement d'un site web</p>
+                                        <div class="tech-stack mb-3">
+                                            <span class="badge">WordPress</span>
+                                            <span class="badge">PHP</span>
+                                            <span class="badge">MySQL</span>
+                                        </div>
+                                        <p class="project-description">
+                                            Création et déploiement d'un site web professionnel avec WordPress pour l'entreprise Rackam.
+                                        </p>
+                                        <div class="project-link-wrapper">
+                                            <a href="https://www.rackam.fmdevschool.fr" class="project-link" target="_blank">
+                                                <i class="bi bi-globe"></i>
+                                                <span>Visiter le site</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <div class="project-icon mb-3">
+                                            <i class="bi bi-window-stack"></i>
+                                        </div>
+                                        <h5 class="card-title">Migration Application</h5>
+                                        <p class="card-text">Migration client lourd vers application web</p>
+                                        <div class="tech-stack mb-3">
+                                            <span class="badge">C#</span>
+                                            <span class="badge">.NET</span>
+                                            <span class="badge">SQL Server</span>
+                                        </div>
+                                        <p class="project-description">
+                                            Migration complète des données d'un logiciel bureau (client lourd) vers une application web moderne.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second slide -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <div class="project-icon mb-3">
+                                            <i class="bi bi-phone"></i>
+                                        </div>
+                                        <h5 class="card-title">Installation Terminaux Zebra</h5>
+                                        <p class="card-text">Configuration et déploiement de terminaux</p>
+                                        <div class="tech-stack mb-3">
+                                            <span class="badge">Android</span>
+                                            <span class="badge">APK</span>
+                                            <span class="badge">Configuration</span>
+                                        </div>
+                                        <p class="project-description">
+                                            Installation et configuration complète des terminaux Zebra, incluant le déploiement des applications.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <div class="project-icon mb-3">
+                                            <i class="bi bi-arrow-up-circle"></i>
+                                        </div>
+                                        <h5 class="card-title">Mise à jour Terminaux Zebra</h5>
+                                        <p class="card-text">Déploiement des mises à jour APK</p>
+                                        <div class="tech-stack mb-3">
+                                            <span class="badge">Android</span>
+                                            <span class="badge">APK</span>
+                                            <span class="badge">Mise à jour</span>
+                                        </div>
+                                        <p class="project-description">
+                                            Gestion et déploiement des mises à jour APK sur les terminaux Zebra.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third slide -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <div class="project-icon mb-3">
+                                            <i class="bi bi-discord"></i>
+                                        </div>
+                                        <h5 class="card-title">Bot Discord</h5>
+                                        <p class="card-text">Bot de gestion pour serveur Discord</p>
+                                        <div class="tech-stack mb-3">
+                                            <span class="badge">Python</span>
+                                            <span class="badge">Discord.py</span>
+                                            <span class="badge">API</span>
+                                        </div>
+                                        <p class="project-description">
+                                            Développement d'un bot Discord en Python pour la gestion automatisée de serveur.
+                                        </p>
+                                        <div class="project-link-wrapper">
+                                            <a href="https://github.com/7Sonny/Bot-discord" class="project-link" target="_blank">
+                                                <i class="bi bi-github"></i>
+                                                <span>Voir le projet</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <div class="project-icon mb-3">
+                                            <i class="bi bi-book"></i>
+                                        </div>
+                                        <h5 class="card-title">Documentation Technique</h5>
+                                        <p class="card-text">Réécriture de documentation logicielle</p>
+                                        <div class="tech-stack mb-3">
+                                            <span class="badge">Documentation</span>
+                                            <span class="badge">Markdown</span>
+                                            <span class="badge">Technical Writing</span>
+                                        </div>
+                                        <p class="project-description">
+                                            Réécriture complète de la documentation d'un logiciel pour améliorer sa compréhension.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Terminaux Zebra Installation -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Installation Terminaux Zebra</h5>
-                            <p class="card-text">Configuration et installation de terminaux Zebra</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Terminaux Zebra MAJ -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Mise à jour Terminaux Zebra</h5>
-                            <p class="card-text">Mise à jour des terminaux Zebra (.apk)</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Documentation -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Réécriture Documentation</h5>
-                            <p class="card-text">Réécriture complète de la documentation d'un logiciel</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Bot Discord -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Bot Discord</h5>
-                            <p class="card-text">Bot Discord pour gestion de serveur développé en Python</p>
-                            <a href="https://github.com/7Sonny/Bot-discord" class="btn btn-primary" target="_blank">
-                                <i class="bi bi-github"></i> Voir le projet
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Serveur VPS -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Installation Serveur VPS</h5>
-                            <p class="card-text">Installation et configuration d'un serveur VPS Ubuntu 24.04 avec solution Keyhelp</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Site Wordpress Rackam -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Site Wordpress Rackam</h5>
-                            <p class="card-text">Développement et déploiement d'un site Wordpress</p>
-                            <a href="https://www.rackam.fmdevschool.fr" class="btn btn-primary" target="_blank">
-                                <i class="bi bi-globe"></i> Visiter le site
-                            </a>
-                        </div>
-                    </div>
+                <!-- Carousel controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#proProjectCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#proProjectCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <!-- Carousel indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#proProjectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#proProjectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#proProjectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-5">
+   
+
+    <!-- Competences Section -->
+    <section id="competences" class="skills-section">
         <div class="container">
-            <h2 class="text-center mb-5">Compétences</h2>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Développement Web</h5>
-                            <ul class="list-unstyled">
-                                <li>HTML/CSS</li>
-                                <li>JavaScript</li>
-                                <li>PHP</li>
-                                <li>WordPress</li>
-                            </ul>
-                        </div>
+            <h2>Compétences</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Développement Web
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            HTML/CSS
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-js"></i>
+                            JavaScript
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-php"></i>
+                            PHP
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-wordpress"></i>
+                            WordPress
+                        </span>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Applications</h5>
-                            <ul class="list-unstyled">
-                                <li>Java</li>
-                                <li>MVC</li>
-                                <li>Client Lourd</li>
-                            </ul>
-                        </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-laptop-code"></i>
+                        Applications
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-item">
+                            <i class="fab fa-java"></i>
+                            Java
+                        </span>
+                        <span class="skill-item">
+                            <i class="fas fa-code-branch"></i>
+                            MVC
+                        </span>
+                        <span class="skill-item">
+                            <i class="fas fa-database"></i>
+                            SQL
+                        </span>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Systèmes</h5>
-                            <ul class="list-unstyled">
-                                <li>Virtualisation</li>
-                                <li>GLPI</li>
-                                <li>Administration</li>
-                            </ul>
-                        </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-server"></i>
+                        Systèmes
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-item">
+                            <i class="fas fa-network-wired"></i>
+                            Virtualisation
+                        </span>
+                        <span class="skill-item">
+                            <i class="fas fa-cogs"></i>
+                            GLPI
+                        </span>
+                        <span class="skill-item">
+                            <i class="fas fa-shield-alt"></i>
+                            Administration
+                        </span>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Outils</h5>
-                            <ul class="list-unstyled">
-                                <li>Git</li>
-                                <li>GitHub</li>
-                                <li>VS Code</li>
-                            </ul>
-                        </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Outils
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            Git
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </span>
+                        <span class="skill-item">
+                            <i class="fas fa-code"></i>
+                            VS Code
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+     <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="text-center mb-5">
-                        <h2>Contact</h2>
-                        <p class="lead">N'hésitez pas à me contacter</p>
-                    </div>
-                    <div class="contact-info">
-                        <div class="row g-4 justify-content-center">
-                            <div class="col-md-6">
-                                <div class="contact-item">
-                                    <i class="bi bi-envelope-fill"></i>
-                                    <h5>Email</h5>
-                                    <p>sonny.verra@gmail.com</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="contact-item">
-                                    <i class="bi bi-telephone-fill"></i>
-                                    <h5>Téléphone</h5>
-                                    <p>+33 07 82 27 60 05</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="contact-item">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                    <h5>Localisation</h5>
-                                    <p>Nice, France</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="contact-item">
-                                    <i class="bi bi-linkedin"></i>
-                                    <h5>LinkedIn</h5>
-                                    <a href="https://www.linkedin.com/in/sonny-verra" target="_blank" class="text-decoration-none">
-                                        /in/sonny-verra
-                                    </a>
-                                </div>
-                            </div>
+            <h2 class="text-center mb-5" data-aos="fade-up">Contact</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
+                        <h3 class="contact-title">Email</h3>
+                        <a href="mailto:sonny.verra.sv@gmail.com" class="contact-info">
+                            sonny.verra.sv@gmail.com
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3 class="contact-title">Téléphone</h3>
+                        <a href="tel:+33782276005" class="contact-info">
+                            07 82 27 60 05
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <a href="https://fr.linkedin.com/in/sonny-verra-3291a1290?trk=public_post_main-feed-card_reshare-text" target="_blank" class="contact-link">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <h3 class="contact-title">LinkedIn</h3>
+                            <div class="contact-info">
+                                Sonny Verra
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -402,8 +590,14 @@
         </div>
     </footer>
 
+    
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
